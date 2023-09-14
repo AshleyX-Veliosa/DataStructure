@@ -39,7 +39,7 @@ namespace CW1
             }
             else
             {
-                MessageBox.Show("Noting");
+                MessageBox.Show("Noting Found. Did u Add Data?");
             }
             textBox2.Clear();
         }
