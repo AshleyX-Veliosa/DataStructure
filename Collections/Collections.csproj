@@ -43,6 +43,8 @@
   <ItemGroup>
     <Compile Include="ArrayCollection.cs" />
     <Compile Include="Collection.cs" />
+    <Compile Include="LinkedCollection.cs" />
+    <Compile Include="LinkHeaderCollections.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

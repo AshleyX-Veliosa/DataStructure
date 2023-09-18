@@ -14,7 +14,9 @@ namespace CW1
 {
     public partial class Form1 : Form
     {
-        Collection x = new ArrayCollection(10);
+        Collection a = new ArrayCollection(10);
+        Collection B = new LinkedCollection();
+        Collection x = new LinkHeaderCollections();
         public Form1()
         {
             InitializeComponent();
