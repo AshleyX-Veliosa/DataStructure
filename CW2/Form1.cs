@@ -27,6 +27,8 @@ namespace CW2
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             button1.Enabled = true;
+            button2.Enabled = true;
+            button3.Enabled = true;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -46,7 +48,7 @@ namespace CW2
             {
                 MessageBox.Show("Noting Found. Did u Add Data?");
             }
-            textBox2.Clear();
+            textBox1.Clear();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -54,6 +56,7 @@ namespace CW2
             a.remove(textBox1.Text);
             MessageBox.Show("Found");
             MessageBox.Show("Removed");
+            textBox1.Clear();
         }
     }
 }
