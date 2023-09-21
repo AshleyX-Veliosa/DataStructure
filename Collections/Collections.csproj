@@ -42,10 +42,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArrayCollection.cs" />
+    <Compile Include="ArraySet.cs" />
     <Compile Include="Collection.cs" />
     <Compile Include="LinkedCollection.cs" />
     <Compile Include="LinkHeaderCollections.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Set.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
