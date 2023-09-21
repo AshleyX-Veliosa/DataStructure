@@ -45,6 +45,7 @@
     <Compile Include="ArraySet.cs" />
     <Compile Include="Collection.cs" />
     <Compile Include="LinkedCollection.cs" />
+    <Compile Include="LinkedSet.cs" />
     <Compile Include="LinkHeaderCollections.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Set.cs" />

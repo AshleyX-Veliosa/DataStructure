@@ -17,7 +17,8 @@ namespace CW1
         Collection a = new ArrayCollection(10);
         Collection B = new LinkedCollection();
         Collection d = new LinkHeaderCollections();
-        Set x = new ArraySet(10);
+        Set g = new ArraySet(10);
+        LinkedSet x = new LinkedSet();
         public Form1()
         {
             InitializeComponent();

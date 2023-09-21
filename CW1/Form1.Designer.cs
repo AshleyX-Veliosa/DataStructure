@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
@@ -111,7 +112,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.PapayaWhip;
+            this.BackColor = System.Drawing.Color.PeachPuff;
+            this.BackgroundImage = global::CW1.Properties.Resources.e0b8a5e0b8b3e0b894e0b8b1e0b89ae0b881e0b8b2e0b8a3e0b8a3e0b8b1e0b89ae0b88ae0b8a1_one_piece_arcs_movies_ova;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox3);
@@ -120,7 +122,9 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
-            this.ForeColor = System.Drawing.Color.Chocolate;
+            this.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.HelpButton = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

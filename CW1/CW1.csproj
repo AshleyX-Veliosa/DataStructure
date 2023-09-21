@@ -65,6 +65,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -84,6 +85,9 @@
       <Project>{44011032-a3a7-4e9e-9ef7-96f7a4a931c8}</Project>
       <Name>Collections</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e0b8a5e0b8b3e0b894e0b8b1e0b89ae0b881e0b8b2e0b8a3e0b8a3e0b8b1e0b89ae0b88ae0b8a1-one-piece-arcs-movies-ova.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
