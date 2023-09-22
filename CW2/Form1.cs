@@ -66,6 +66,7 @@ namespace CW2
                     textBox3.Text = "" + i;
                 }
                 label1.Text = "จำนวน " + i + " คน";
+                MessageBox.Show("ลบข้อมูลเรียบร้อย");
             }
             else
             {
