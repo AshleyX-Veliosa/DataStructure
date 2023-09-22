@@ -37,7 +37,7 @@ namespace CW2
             i++;
             textBox3.Text = "" + i;
             label1.Text = "จำนวน " + i + " คน";
-            MessageBox.Show("Added");
+            MessageBox.Show("เพิ่มข้อมูลเรียบร้อย");
             textBox1.Clear();
         }
 
@@ -84,6 +84,7 @@ namespace CW2
             a.set(i - 1, textBox2.Text);
             MessageBox.Show("แก้ไขเรียบร้อย");
             label1.Text = "จำนวน " + i + " คน";
+            textBox2.Clear();
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
