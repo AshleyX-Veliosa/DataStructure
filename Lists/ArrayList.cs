@@ -1,25 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Collections;
-
-namespace Collections
+﻿namespace Lists
 {
     public class ArrayList : List
     {
-        private object[] data;
-        private int SIZE;
         private int cap;
+        private int SIZE;
+        private object[] data;
 
         public ArrayList(int cap)
         {
             this.cap = cap;
-            this.SIZE = 0;
-            this.data = new object[cap];
+            data = new object[cap];
         }
-
         public void add(int index, object e)
         {
             ensureCapacity();
@@ -27,18 +18,6 @@ namespace Collections
                 data[i] = data[i - 1];
             data[index] = e;
             SIZE++;
-        }
-        private void ensureCapacity()
-        {
-            if (SIZE + 1 > data.Length)
-            {
-                object[] temp = new object[cap * 2];
-                for (int i = 0; i < SIZE; i++)
-                {
-                    temp[i] = data[i];
-                }
-                data = temp;
-            }
         }
 
         public void add(object e)
@@ -55,18 +34,12 @@ namespace Collections
         {
             return data[index];
         }
-        public void set(int index, object e)
-        {
-            data[index] = e;
-        }
 
         public int indexOf(object e)
         {
             for (int i = 0; i < SIZE; i++)
-            {
-                if (data[i].Equals(e))
+                if (e.Equals(data[i]))
                     return i;
-            }
             return -1;
         }
 
@@ -80,18 +53,35 @@ namespace Collections
             if (index >= SIZE) return;
             for (int i = index + 1; i < SIZE; i++)
                 data[i - 1] = data[i];
+            data[--SIZE] = null;
         }
 
         public void remove(object e)
         {
             int i = indexOf(e);
-            if (i != -1)
+            if (i > -1)
                 remove(i);
+        }
+
+        public void set(int index, object e)
+        {
+            data[index] = e;
         }
 
         public int size()
         {
             return SIZE;
+        }
+        private void ensureCapacity()
+        {
+            if (SIZE + 1 > data.Length)
+            {
+                object[] tempdata = new object[SIZE * 2];
+                for (int i = 0; i < SIZE; i++)
+                    tempdata[i] = data[i];
+                data = tempdata;
+            }
+
         }
     }
 }
