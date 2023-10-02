@@ -13,7 +13,8 @@ namespace CW3
         static bool IsCorrectParentheses(string t)
         {
             string first = "{([", end = "})]";
-            ArrayStack stack = new ArrayStack(t.Length);
+            //ArrayStack stack = new ArrayStack(t.Length);
+            LinkedStack stack = new LinkedStack();
 
             for (int i = 0; i < t.Length; i++)
             {
@@ -35,7 +36,8 @@ namespace CW3
         static string InfixtoPostfix(string infix)
         {
             string postfix = "";
-            ArrayStack stack = new ArrayStack(infix.Length);
+            //ArrayStack stack = new ArrayStack(infix.Length);
+            LinkedStack stack = new LinkedStack();
             for (int i = 0; i < infix.Length; i++)
             {
                 char token = infix[i];
@@ -75,7 +77,8 @@ namespace CW3
 
         static double CalculatePostfix(string postfix)
         {
-            ArrayStack stack = new ArrayStack(postfix.Length);
+            //ArrayStack stack = new ArrayStack(postfix.Length);
+            LinkedStack stack = new LinkedStack();
 
             for (int i = 0; i < postfix.Length; i++)
             {
