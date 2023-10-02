@@ -58,13 +58,13 @@ namespace CW3
         }
         static bool IsOperator(char c)
         {
-            string operators = "+-*/^()";
+            string operators = "+-*/^(){}[]";
             return operators.IndexOf(c) >= 0;
         }
 
         static int OperatorPriority(char c, bool sw = false)
         {
-            string operators = "+-*/^()";
+            string operators = "+-*/^(){}[]";
             int[] priority = { 2, 2, 3, 3, 5, 6, 1 };
             int[] prioritysw = { 2, 2, 3, 3, 4, 0 };
             if (sw)
@@ -75,6 +75,7 @@ namespace CW3
         static double CalculatePostfix(string postfix)
         {
             ArrayStack stack = new ArrayStack(postfix.Length);
+
             for (int i = 0; i < postfix.Length; i++)
             {
                 if (!IsOperator(postfix[i]))
@@ -105,9 +106,11 @@ namespace CW3
             Console.WriteLine(IsCorrectParentheses(s));
             String l = "a+b*c+(d*e+f)*g";
             Console.WriteLine(InfixtoPostfix(l));
-            String p = "1+2+3+4+5*6-7+8";
+            String p = "2*5*4*1+(5-9)";
             Console.WriteLine(InfixtoPostfix(p));
             Console.WriteLine(CalculatePostfix(InfixtoPostfix(p)));
+            String q = "{(1+2)+3-4}";
+            Console.WriteLine(InfixtoPostfix(q));
         }
     }
 }
