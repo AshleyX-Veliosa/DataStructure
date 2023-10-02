@@ -8,7 +8,7 @@ namespace CW2
     {
         DoublyLinkedList a = new DoublyLinkedList();
         //ArrayList a = new ArrayList(10);
-        // a = new SinglyLinkedList();
+        //SinglyLinkedList a = new SinglyLinkedList();
         int i = 0;
         public Form1()
         {
