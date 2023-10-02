@@ -72,6 +72,7 @@ namespace CW3
             return priority[operators.IndexOf(c)];
         }
 
+
         static double CalculatePostfix(string postfix)
         {
             ArrayStack stack = new ArrayStack(postfix.Length);
