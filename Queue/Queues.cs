@@ -1,11 +1,12 @@
-﻿namespace Queues
+﻿namespace Queue
 {
-    public interface Queue
+    public interface Queues
     {
-        bool isEmtpy();
+        bool isEmpty();
         int size();
         void enqueue(object e);
         object dequeue();
         object peek();
     }
+
 }

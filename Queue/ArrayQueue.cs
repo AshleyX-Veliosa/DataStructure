@@ -1,6 +1,6 @@
-﻿namespace Queues
+﻿namespace Queue
 {
-    public class ArrayQueue : Queue
+    public class ArrayQueue : Queues
     {
         private object[] data;
         private int SIZE;
@@ -46,14 +46,14 @@
             SIZE++;
         }
 
-        public bool isEmtpy()
+        public bool isEmpty()
         {
             return SIZE == 0;
         }
 
         public object peek()
         {
-            if (isEmtpy())
+            if (isEmpty())
                 throw new System.MissingMemberException();
             return data[firstindex];
         }

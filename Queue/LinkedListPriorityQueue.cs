@@ -2,21 +2,15 @@
 
 namespace Queue
 {
-    public class ArrayListQueue : Queues
+    public class LinkedListPriorityQueue : PriorityQueue
     {
-        private List list;
-        public ArrayListQueue(int cap)
-        { 
-            list = new ArrayList(cap);
-        }
-        public bool isEmpty() 
-        { 
+        private List list = new DoublyLinkedList();
+        public bool isEmpty()
+        {
             return list.isEmpty(); 
         }
-        public int size() 
-        { 
-            return list.size(); 
-        }
+        public int size()
+        { return list.size(); }
         public void enqueue(object e)
         {
             list.add(e);
@@ -35,7 +29,5 @@ namespace Queue
                 throw new System.MissingMemberException();
             return list.get(0);
         }
-
     }
-
 }

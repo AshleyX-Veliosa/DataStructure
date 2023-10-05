@@ -103,7 +103,6 @@ namespace CW3
             return double.Parse(stack.pop().ToString());
         }
 
-
         static void Main(string[] args)
         {
             String s = "{[()]}";
@@ -113,7 +112,7 @@ namespace CW3
             String p = "2*5*4*1+(5-9)";
             Console.WriteLine(InfixtoPostfix(p));
             Console.WriteLine(CalculatePostfix(InfixtoPostfix(p)));
-            String q = "{(1+2)+3-4}";
+            String q = "(1+2)+3-4";
             Console.WriteLine(InfixtoPostfix(q));
         }
     }

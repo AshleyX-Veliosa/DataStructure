@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Queues
+﻿namespace Queue
 {
-    public interface PriorityQueue : Queue
+    public interface PriorityQueue : Queues
     {
     }
+
 }

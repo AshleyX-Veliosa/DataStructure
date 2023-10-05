@@ -50,9 +50,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Queue\Queues.csproj">
-      <Project>{b350264f-6e3e-428e-9556-0b19095a0318}</Project>
-      <Name>Queues</Name>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Queue\Queue.csproj">
+      <Project>{a07e0854-b33e-4377-a17b-60acfa290d2f}</Project>
+      <Name>Queue</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

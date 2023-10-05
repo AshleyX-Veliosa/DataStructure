@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B350264F-6E3E-428E-9556-0B19095A0318}</ProjectGuid>
+    <ProjectGuid>{A07E0854-B33E-4377-A17B-60ACFA290D2F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Queue</RootNamespace>
@@ -44,18 +44,19 @@
     <Compile Include="ArrayListPriorityQueue.cs" />
     <Compile Include="ArrayListQueue.cs" />
     <Compile Include="ArrayQueue.cs" />
+    <Compile Include="LinkedListPriorityQueue.cs" />
     <Compile Include="LinkedListQueue.cs" />
     <Compile Include="PriorityQueue.cs" />
+    <Compile Include="Queues.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Queue.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Collections\Collections.csproj">
-      <Project>{44011032-a3a7-4e9e-9ef7-96f7a4a931c8}</Project>
+      <Project>{44011032-A3A7-4E9E-9EF7-96F7A4A931C8}</Project>
       <Name>Collections</Name>
     </ProjectReference>
     <ProjectReference Include="..\Lists\Lists.csproj">
-      <Project>{AA2DBC3D-A97E-4275-B952-73A3215755AD}</Project>
+      <Project>{aa2dbc3d-a97e-4275-b952-73a3215755ad}</Project>
       <Name>Lists</Name>
     </ProjectReference>
   </ItemGroup>
