@@ -1,7 +1,7 @@
 ﻿using System;
 using Lists;
 
-namespace Queue
+namespace Queues
 {
     public class LinkedListQueue : Queue
     {

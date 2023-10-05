@@ -50,9 +50,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Queue\Queue.csproj">
+    <ProjectReference Include="..\Queue\Queues.csproj">
       <Project>{b350264f-6e3e-428e-9556-0b19095a0318}</Project>
-      <Name>Queue</Name>
+      <Name>Queues</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

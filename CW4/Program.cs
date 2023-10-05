@@ -1,5 +1,6 @@
-﻿using Queue;
+﻿using Queues;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,15 +12,13 @@ namespace CW4
     {
         static void Main(string[] args)
         {
-            ArrayQueue f = new ArrayQueue(10);
-            //ArrayListQueue f = new ArrayListQueue(10);
-            //LinkedListQueue f = new LinkedListQueue();
-            //PriorityQueue f = new PriorityQueue();
+            Queues.Queue f = new ArrayQueue(3);
             f.enqueue(7);
-            Console.WriteLine(f.peek());
-            f.size();
-            Console.WriteLine(f.size());
-            Console.WriteLine(f.isEmtpy());
+            f.enqueue(8);
+            f.enqueue(9);
+            Console.WriteLine(f.dequeue());
+            Console.WriteLine(f.dequeue());
+            Console.WriteLine(f.dequeue());
         }
     }
 }

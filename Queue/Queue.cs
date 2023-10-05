@@ -1,4 +1,4 @@
-﻿namespace Queue
+﻿namespace Queues
 {
     public interface Queue
     {
