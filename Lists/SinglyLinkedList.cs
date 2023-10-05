@@ -1,13 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Lists;
-using Collections;
-using System.Diagnostics.Eventing.Reader;
-
-namespace Lists
+﻿namespace Lists
 {
     public class SinglyLinkedList : List
     {
