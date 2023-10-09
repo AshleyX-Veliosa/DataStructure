@@ -45,6 +45,7 @@
     <Compile Include="ArrayListQueue.cs" />
     <Compile Include="ArrayQueue.cs" />
     <Compile Include="BinaryHeap.cs" />
+    <Compile Include="BinaryMinHeap.cs" />
     <Compile Include="LinkedListPriorityQueue.cs" />
     <Compile Include="LinkedListQueue.cs" />
     <Compile Include="PriorityQueue.cs" />
