@@ -29,6 +29,15 @@ namespace CW4
                     return 0;
             }
         }
+        static void PrintArray(int[] arr)
+        {
+            foreach (var num in arr)
+            {
+                Console.Write(num + " ");
+            }
+            Console.WriteLine();
+        }
+
         static void Main(string[] args)
         {
             //Queues f = new ArrayQueue(10);// 7,8,9
@@ -37,19 +46,32 @@ namespace CW4
             //PriorityQueue f = new ArrayListPriorityQueue(4); // WHY DOES 9,8,7?
             //PriorityQueue f = new LinkedListPriorityQueue(); // 7,8,9
             //BinaryHeap f = new BinaryHeap(4);
-            BinaryMinHeap f = new BinaryMinHeap(10);
-            f.enqueue(9);
-            f.enqueue(3);
-            f.enqueue(5);
-            f.enqueue(7);
-            f.enqueue(8);
-            Console.WriteLine(f.dequeue());
-            Console.WriteLine(f.dequeue());
-            Console.WriteLine(f.dequeue());
-            Console.WriteLine(f.dequeue());
-            BMI b1 = new BMI(1.72 ,52);
-            Console.WriteLine(b1.getBMI());
+            //BinaryMinHeap f = new BinaryMinHeap(10);
+            //f.enqueue(9);
+            //f.enqueue(3);
+            //f.enqueue(5);
+            //f.enqueue(7);
+            //f.enqueue(8);
+            //Console.WriteLine(f.dequeue());
+            //Console.WriteLine(f.dequeue());
+            //Console.WriteLine(f.dequeue());
+            //Console.WriteLine(f.dequeue());
+            //BMI b1 = new BMI(1.72 ,52);
+            //Console.WriteLine(b1.getBMI());
 
+                // Create an array of integers to sort
+                int[] arr = {10, 123, 143, 183, 14, 55};
+
+                // Print the original array
+                Console.WriteLine("Original Array:");
+                PrintArray(arr);
+
+                // Sort the array using RadixSort
+                RadixSort.Sort(arr);
+
+                // Print the sorted array
+                Console.WriteLine("\nSorted Array:");
+                PrintArray(arr);
         }
     }
 }
