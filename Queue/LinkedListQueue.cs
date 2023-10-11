@@ -7,10 +7,12 @@ namespace Queue
         private List list = new DoublyLinkedList();
         public bool isEmpty() 
         { 
-            return list.isEmpty(); 
+            return list.isEmpty();
         }
         public int size() 
-        { return list.size(); }
+        { 
+            return list.size();
+        }
         public void enqueue(object e)
         {
             list.add(e);

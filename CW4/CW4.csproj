@@ -53,6 +53,10 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BinaryTree\BinaryTree.csproj">
+      <Project>{a0027220-dc18-441a-b31e-4253812007b0}</Project>
+      <Name>BinaryTree</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Queue\Queue.csproj">
       <Project>{a07e0854-b33e-4377-a17b-60acfa290d2f}</Project>
       <Name>Queue</Name>

@@ -1,5 +1,6 @@
 ﻿using System;
 using Queue;
+using BinaryTree;
 
 namespace CW4
 {
@@ -46,19 +47,23 @@ namespace CW4
             //PriorityQueue f = new ArrayListPriorityQueue(4); // WHY DOES 9,8,7?
             //PriorityQueue f = new LinkedListPriorityQueue(); // 7,8,9
             //BinaryHeap f = new BinaryHeap(4);
-            //BinaryMinHeap f = new BinaryMinHeap(10);
-            //f.enqueue(9);
-            //f.enqueue(3);
-            //f.enqueue(5);
-            //f.enqueue(7);
-            //f.enqueue(8);
-            //Console.WriteLine(f.dequeue());
-            //Console.WriteLine(f.dequeue());
-            //Console.WriteLine(f.dequeue());
-            //Console.WriteLine(f.dequeue());
-            //BMI b1 = new BMI(1.72 ,52);
-            //Console.WriteLine(b1.getBMI());
+            Console.WriteLine("BinaryHeap Method");
+            BinaryMinHeap f = new BinaryMinHeap(10);
+            f.enqueue(9);
+            f.enqueue(3);
+            f.enqueue(5);
+            f.enqueue(7);
+            f.enqueue(8);
+            Console.WriteLine(f.dequeue());
+            Console.WriteLine(f.dequeue());
+            Console.WriteLine(f.dequeue());
+            Console.WriteLine(f.dequeue());
 
+            Console.WriteLine("BMI Calculator");
+            BMI b1 = new BMI(1.72 ,52);
+            Console.WriteLine(b1.getBMI());
+
+            Console.WriteLine("RadixSort Method");
                 // Create an array of integers to sort
                 int[] arr = {10, 123, 143, 183, 14, 55};
 
