@@ -47,36 +47,42 @@ namespace CW4
             //PriorityQueue f = new ArrayListPriorityQueue(4); // WHY DOES 9,8,7?
             //PriorityQueue f = new LinkedListPriorityQueue(); // 7,8,9
             //BinaryHeap f = new BinaryHeap(4);
-            Console.WriteLine("BinaryHeap Method");
-            BinaryMinHeap f = new BinaryMinHeap(10);
-            f.enqueue(9);
-            f.enqueue(3);
-            f.enqueue(5);
-            f.enqueue(7);
-            f.enqueue(8);
-            Console.WriteLine(f.dequeue());
-            Console.WriteLine(f.dequeue());
-            Console.WriteLine(f.dequeue());
-            Console.WriteLine(f.dequeue());
+            //Console.WriteLine("BinaryHeap Method");
+            //BinaryMinHeap f = new BinaryMinHeap(10);
+            //f.enqueue(9);
+            //f.enqueue(3);
+            //f.enqueue(5);
+            //f.enqueue(7);
+            //f.enqueue(8);
+            //Console.WriteLine(f.dequeue());
+            //Console.WriteLine(f.dequeue());
+            //Console.WriteLine(f.dequeue());
+            //Console.WriteLine(f.dequeue());
+            //Console.WriteLine(f.dequeue());
 
-            Console.WriteLine("BMI Calculator");
-            BMI b1 = new BMI(1.72 ,52);
-            Console.WriteLine(b1.getBMI());
+            //Console.WriteLine("BMI Calculator");
+            //BMI b1 = new BMI(1.72 ,52);
+            //Console.WriteLine(b1.getBMI());
 
-            Console.WriteLine("RadixSort Method");
-                // Create an array of integers to sort
-                int[] arr = {10, 123, 143, 183, 14, 55};
+            //Console.WriteLine("RadixSort Method");
+            // Create an array of integers to sort
+            //int[] arr = {10, 123, 143, 183, 14, 55};
 
-                // Print the original array
-                Console.WriteLine("Original Array:");
-                PrintArray(arr);
+            // Print the original array
+            //Console.WriteLine("Original Array:");
+            //PrintArray(arr);
 
-                // Sort the array using RadixSort
-                RadixSort.Sort(arr);
+            // Sort the array using RadixSort
+            //RadixSort.Sort(arr);
 
-                // Print the sorted array
-                Console.WriteLine("\nSorted Array:");
-                PrintArray(arr);
+            // Print the sorted array
+            //Console.WriteLine("\nSorted Array:");
+            //PrintArray(arr);
+
+            object[] x = new object[] { 2, 7, 1, 9, 10, 20, 99, 108, 1050, 20, 200 };
+            BinaryMinHeap.heapSort(x);
+            for (int i = 0; i < x.Length; i++)
+                Console.WriteLine(x[i]);
         }
     }
 }

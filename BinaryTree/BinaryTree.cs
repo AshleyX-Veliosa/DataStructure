@@ -62,27 +62,27 @@ namespace BinaryTree
         private int toArrayPreorder(Node x, object[] a, int k)
         {
             if (x == null) return k;
-            a[k++] = x.e;
-            k = toArrayPreorder(x.left, a, k);
-            k = toArrayPreorder(x.right, a, k);
+            a[k++] = x.e;//บน
+            k = toArrayPreorder(x.left, a, k);// ซ้าย
+            k = toArrayPreorder(x.right, a, k);// ขวา
             return k;
         }
         //From here is toArray--
         private int toArrayInorder(Node x, object[] a, int k)
         {
             if (x == null) return k;
-            k = toArrayInorder(x.left, a, k);
-            a[k++] = x.e;
-            k = toArrayInorder(x.right, a, k);
+            k = toArrayInorder(x.left, a, k);// ซ้าย
+            a[k++] = x.e;//บน
+            k = toArrayInorder(x.right, a, k);// ชวา
             return k;
         }
 
         private int toArrayPostorder(Node x, object[] a, int k)
         {
             if (x == null) return k;
-            k = toArrayPostorder(x.left, a, k);
-            k = toArrayPostorder(x.right, a, k);
-            a[k++] = x.e;
+            k = toArrayPostorder(x.left, a, k);//ซ้าย
+            k = toArrayPostorder(x.right, a, k);//ขวา
+            a[k++] = x.e;//บน
             return k;
         }
 

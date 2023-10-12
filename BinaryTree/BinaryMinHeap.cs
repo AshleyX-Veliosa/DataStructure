@@ -93,7 +93,15 @@ namespace Queue
                 tempdata[i] = data[i];
             data = tempdata;
         }
-
+        public static void heapSort(object[] x)
+        {
+            BinaryMinHeap h = new BinaryMinHeap(0);
+            h.data = x;
+            h.SIZE = x.Length;
+            for (int k = h.size() - 1; k >= 0; k--)
+                h.reorderDown(k);
+            for (int k = h.size() - 1; k > 0; k--)
+                x[k] = h.dequeue();
+        }
     }
-
 }
