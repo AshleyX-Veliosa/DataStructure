@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stacks", "Stacks\Stacks.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HuffmanTest", "HuffmanTest\HuffmanTest.csproj", "{C47D3B13-6AF0-4021-9F1A-DFF9BF4C21CC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maze", "Maze\Maze.csproj", "{7414B4C6-7D03-445E-9D9B-0A3FF773DB33}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{C47D3B13-6AF0-4021-9F1A-DFF9BF4C21CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C47D3B13-6AF0-4021-9F1A-DFF9BF4C21CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C47D3B13-6AF0-4021-9F1A-DFF9BF4C21CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7414B4C6-7D03-445E-9D9B-0A3FF773DB33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7414B4C6-7D03-445E-9D9B-0A3FF773DB33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7414B4C6-7D03-445E-9D9B-0A3FF773DB33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7414B4C6-7D03-445E-9D9B-0A3FF773DB33}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
