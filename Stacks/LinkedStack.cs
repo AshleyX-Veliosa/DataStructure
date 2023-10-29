@@ -1,4 +1,4 @@
-﻿namespace Stack
+﻿namespace Stacks
 {
     public class LinkedStack : Stack
     {

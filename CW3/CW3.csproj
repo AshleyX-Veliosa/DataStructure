@@ -50,9 +50,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Stack\Stack.csproj">
-      <Project>{267ad7a0-cbe5-4ad6-b536-88ec51161d59}</Project>
-      <Name>Stack</Name>
+    <ProjectReference Include="..\Stacks\Stacks.csproj">
+      <Project>{c488ff08-da42-437a-991e-a8172a92f0f1}</Project>
+      <Name>Stacks</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

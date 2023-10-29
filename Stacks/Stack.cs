@@ -1,4 +1,4 @@
-﻿namespace Stack
+﻿namespace Stacks
 {
     public interface Stack
     {
