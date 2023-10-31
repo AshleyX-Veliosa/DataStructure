@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
+using Stacks;
 
 namespace Maze
 {
@@ -41,30 +41,28 @@ namespace Maze
             }
 
             DisplayMaze(maze, startX, startY);
-            Stack<Tuple<int, int>> path = new Stack<Tuple<int, int>>();
-            path.Push(new Tuple<int, int>(startX, startY));
+            ArrayStack path = new ArrayStack(maze.GetLength(0) * maze.GetLength(1));
+            //Stack<Tuple<int, int>> path = new Stack<Tuple<int, int>>();// Fix here
+            path.push(new Tuple<int, int>(startX, startY));
 
             while (maze[startX, startY] != 'E')
             {
                 maze[startX, startY] = '.';
-                List<Tuple<int, int>> neighbors = new List<Tuple<int, int>>
-                {
-                    new Tuple<int, int>(startX - 1, startY),
-                    new Tuple<int, int>(startX + 1, startY),
-                    new Tuple<int, int>(startX, startY - 1),
-                    new Tuple<int, int>(startX, startY + 1)
-                };
+
+                // Define arrays to store neighboring coordinates
+                int[] neighborX = { startX - 1, startX + 1, startX, startX };
+                int[] neighborY = { startY, startY, startY - 1, startY + 1 };
 
                 bool found = false;
 
-                foreach (var neighbor in neighbors)
+                for (int i = 0; i < neighborX.Length; i++)
                 {
-                    int newX = neighbor.Item1;
-                    int newY = neighbor.Item2;
+                    int newX = neighborX[i];
+                    int newY = neighborY[i];
 
                     if (IsValidMove(maze, newX, newY))
                     {
-                        path.Push(new Tuple<int, int>(newX, newY));
+                        path.push(new Tuple<int, int>(newX, newY));
                         startX = newX;
                         startY = newY;
                         found = true;
@@ -80,6 +78,7 @@ namespace Maze
 
                 DisplayMaze(maze, startX, startY);
             }
+
 
             Console.WriteLine("Maze solved!");
         }
