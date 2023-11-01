@@ -31,5 +31,22 @@ namespace BinaryTree
             }
             return (HuffmanTree)h.dequeue();
         }
+
+        public string decode(string s)
+        {
+            string t = "";
+            Node x = root;
+            for (int i = 0; i < s.Length; i++)
+            {
+                if (s[i] == '0') x = x.left;
+                else x = x.right;
+                if (x.isLeaf())
+                {
+                    t += x.e;
+                    x = root;
+                }
+            }
+            return t;
+        }
     }
 }
